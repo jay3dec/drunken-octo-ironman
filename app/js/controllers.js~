@@ -17,6 +17,7 @@ angular.module('myApp.controllers', []).
 	var options = {
           title: 'Company Performance'
         };
+        console.log($scope);
         var chart = new google.visualization.LineChart(document.getElementById('chartdiv'));
         chart.draw(data, options);
   }])
